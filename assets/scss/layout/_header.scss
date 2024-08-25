@@ -1,22 +1,25 @@
-.navbar{
-  max-width: 296px;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-  color: $gray-900;
-  padding-left: 32px;
-  &:hover{
-    border-left: 4px solid $green;
-    color: $green;
-    padding-left: 28px;
+.sidebar.navbar{
+  width: 296px;
+  .nav-link {
+    color: $gray-900;
+    padding-left: 32px;
+    &:hover{
+      border-left: 4px solid $green;
+      color: $green;
+      padding-left: 28px;
+    }
+    &:focus{
+      border-left: 4px solid $green;
+      color: $green;
+      padding-left: 28px;
+    }
   }
-  &:focus{
-    border-left: 4px solid $green;
-    color: $green;
-    padding-left: 28px;
-  }
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.sidebar .nav-link.active, .sidebar .nav-link.show {
   border-left: 4px solid $green;
   color: $green;
   padding-left: 28px;
+}
+.mail-fz{
+  font-size: 14px;
 }
