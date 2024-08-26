@@ -5,12 +5,11 @@
     margin-right: 50px;
   }
 }
-.header .nav-link,
-.chat-card-nav .nav-link{
-  color: $gray-900;
-  &:hover{
-    opacity: 0.8;
-  }
+
+.header .dropdown-toggle::after,
+.chat-card-nav .dropdown-toggle::after,
+.chat-card-header-dropdowm .dropdown-toggle::after{
+  display: none;
 }
 .text-small{
   font-size: 12px;
@@ -63,4 +62,38 @@
 .chat-card-btn{
   padding: 8px 32px;
   border-radius: 2px;
+}
+
+.chat-card-collapse{
+  height: 319px;
+}
+.chat-card-collapse-btns{
+  padding: 16px 24px;
+}
+.chat-card-collapse-textarea{
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 0;
+  &:focus{
+    box-shadow: none;
+  }
+  &::placeholder{
+    color: $gray-400;
+  }
+}
+
+// 狀態
+.header .nav-link,
+.chat-card-nav .nav-link,
+.main-gray-link-hover,
+.chat-card-icon-edit,
+.chat-card-collapse .nav-link{
+  color: $gray-900;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+.chat-card-icon-grade:hover{
+  opacity: 0.8;
+  font-variation-settings: 'FILL' 1;
 }
